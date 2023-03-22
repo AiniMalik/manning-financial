@@ -124,6 +124,7 @@ section#hero{
   text-align: start;
   background-color: #000;
   background-image: url('./Assests/mainHeader.png');
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -247,7 +248,7 @@ section#hero{
   align-items: center;
   justify-content: center;
   width: 100%;
-    background-color: #f83223;
+  background-color: #f83223;
 }
 .innerSubHeader{
   background-image: linear-gradient(
@@ -382,6 +383,30 @@ font-size: 3rem;
 .dropdown_menu{
   left: 2rem;
   width: unset;
+}
+section#hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  text-align: start;
+  background-color: #000;
+  background-image: url('./Assests/Hero-section.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 4rem;
+}
+.innerHeaderOne{
+  display: block;
+}
+.innerTextNormal{
+font-size: 1.8rem;
+}
+.innerTextBold{
+font-size: 4rem;
 }
 }
 
