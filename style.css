@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+li{
+  list-style: none;
+  border-right: 1px solid rgb(146, 144, 144);
+}
+
+a{
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #4d4d4d;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+a:hover{
+  color: #f83223;
+}
+
+/* HEADER */
+
+header{
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links{
+display:flex;
+gap: 0.5rem;
+}
+
+.navbar .toggle_btn{
+  color: #030303;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.action-btn{
+  padding: 0.5rem 1rem;
+  color: #fefefe;
+  font-weight: 500;
+  font-family: "Oswald";
+  background-color: #f83223;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: scale .2 ease;
+}
+
+.action-btn:hover{
+  color: white ;
+  scale: 1.05;
+}
+.action-btn:active{
+  scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(12, 12, 12, 0.1);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+  height: 305px;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.dropdown_menu a {
+color: #fff;
+}
+.dropdown_menu .action-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section#hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  text-align: start;
+  background-color: #000;
+  background-image: url('./Assests/mainHeader.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 4rem;
+}
+.innerSection{
+  margin: 0;
+}
+
+.mainBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.mainSubBody {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: space-around;
+}
+.logo {
+  margin-left: 3px;
+  position: relative;
+}
+.menu {
+  display: flex;
+  color: white;
+  gap: 7px;
+}
+.mainLink {
+  font-size: 16px;
+  color: #4d4d4d;
+  font-weight: 400;
+  font-family: "Poppins";
+  border-right: 1px solid rgb(146, 144, 144);
+}
+.mainBtn {
+  font-size: 20px;
+  color: #fefefe;
+  font-weight: 500;
+  font-family: "Oswald";
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 32px;
+  background-color: #f83223;
+}
+.header {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+  /* position: relative; */
+  /* background-color: rgb(20,20,20); */
+}
+.mainHeader {
+  background-image: url("/Assests/mainHeader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.textHeader {
+  position: absolute;
+  padding-left: 5%;
+  margin-top: 20%;
+}
+.headerText {
+  font-size: 2rem;
+  color: #f83223;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+.headerMainHeading {
+   font-size: 3rem;
+  /* font-size: 60px; */
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+.headerMainPara {
+   font-size: 1rem;
+  /* font-size: 18px; */
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.headerMainBtn {
+  margin-top: 5%;
+  padding: 0.5rem 2rem;
+  color: #fefefe;
+  font-weight: 500;
+  font-family: "Oswald";
+  background-color: #f83223;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: scale .2 ease;
+}
+.headerMainBtn:hover{
+  color: white ;
+  scale: 1.05;
+}
+.headerMainBtn:active{
+  scale: 0.95;
+}
+
+.subHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+    background-color: #f83223;
+}
+.innerSubHeader{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("/Assests/backgroundImg.png");
+  /* background: rgba(0, 0, 0, 0.5); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.innerHeaderOne {
+  background-color: #f83223;
+   padding: 50px;
+   height: 100%;
+  padding-left: 5%;
+  flex: 33%;
+}
+.innerHeaderTwo {
+  background-color: transparent;
+ padding: 50px;
+   padding-left: 5%;
+   flex: 22%;
+   
+}
+.vl {
+  border-right: 1px solid white;
+ margin: auto;
+  height: 180px;
+}
+.innerHeaderThree {
+   background-color: transparent;;
+  padding: 50px;
+   padding-left: 5%;
+    flex: 22%;
+}
+.innerHeaderFour {
+  background-color: transparent;
+ padding: 50px;
+   flex: 22%;
+    padding-left: 5%;
+}
+.innerTextNormal{
+font-size: 1.8rem;
+color: #fefefe;
+/* font-weight: 300; */
+font-family: "Oswald";
+}
+.innerImgNormal{
+width: 50px;
+color: #fefefe;
+font-family: "Oswald";
+}
+.innerTextBold{
+font-size: 4.1rem;
+color: #ffffff;
+font-weight: 700;
+font-family: "Oswald";
+}
+.innerTextBoldHeader{
+font-size: 2rem;
+line-height: 55px;
+text-transform: uppercase;
+color: #ffffff;
+/* font-weight: 300; */
+font-family: "Oswald";
+}
+.innerTextNormalHeader{
+font-size: 1rem;
+color: #ffffff;
+font-weight: 400;
+font-family: "Poppins";
+}
+
+/* RESPONSIVENESS */
+
+
+@media(max-width:992px){
+  .subHeader{
+    flex-direction: column;
+    width: 100%;
+    background-color: aqua;
+    
+  }
+  .vl{
+    display: none;
+  }
+  .innerHeaderOne{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+  }
+   .innerSubHeader{
+    flex-direction: column;
+   }
+  .navbar .links,
+  .navbar .action-btn{
+    display: none;
+  }
+  .navbar .toggle_btn{
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+  .headerText {
+  font-size: 1.5rem;
+}
+.headerMainHeading {
+   font-size: 2.5rem;
+}
+.headerMainPara {
+   font-size: 0.9rem;
+}
+.innerTextNormal{
+font-size: 1.5rem;
+}
+.innerTextBold{
+font-size: 3rem;
+}
+}
+@media(max-width:576px){
+.dropdown_menu{
+  left: 2rem;
+  width: unset;
+}
+}
+
+

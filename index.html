@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>   
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./Assests/logo.png" width="150px">
+                </div>
+                <ul class="links">
+                    <li><a href="#">Who We are &nbsp;&nbsp;</a></li>
+                    <li><a href="#">Financial Broker <i class="fa-solid fa-angle-down fa-1x"></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="#">Life Cover <i class="fa-solid fa-angle-down fa-sm" ></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="#">Retirement Planning <span><i class="fa-solid fa-angle-down fa-sm"></i></span></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="#">Savings & Investment <i class="fa-solid fa-angle-down fa-sm"></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="#">Media Center <i class="fa-solid fa-angle-down"></i>&nbsp;&nbsp;</a></li>
+                </ul>
+                <a href="" class="action-btn">CALL NOW</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">Who We are </a></li>
+                <li><a href="#">Financial Broker <span><i class="fa-solid fa-angle-down fa-sm"></i></span>&nbsp;</a></li>
+                <li><a href="#">Life Cover <i class="fa-solid fa-angle-down fa-sm"></i>&nbsp;</a></li>
+                <li><a href="#">Retirement Planning <i class="fa-solid fa-angle-down fa-sm"></i>&nbsp;</a></li>
+                <li><a href="#">Savings & Investment <i class="fa-solid fa-angle-down fa-sm"></i>&nbsp;</a></li>
+                <li><a href="#">Media Center <i class="fa-solid fa-angle-down fa-sm"></i>&nbsp;</a></li>
+                <li><a href="" class="action-btn">CALL NOW</a></li> 
+            </div>
+        </header>  
+
+        <main>
+            <section id="hero">
+                <div class="innerSection">
+                <h2 class="headerText">Welcome To</h2>
+                <h1 class="headerMainHeading">MANNING FINANCIAL</h1>
+                <p class="headerMainPara">Manning Financial is a multi agency intermediary meaning <br />
+                    we offer financial advice on all products and services <br />   from all
+                    life insurance companies in the Irish market
+                </p>
+                <button class="headerMainBtn">TALK WITH US</button>
+                </div>
+            </section>
+        </main>
+
+        <div class="subHeader">
+            <div class="innerHeaderOne">
+                <p class="innerTextNormal">PROTECT YOUR</p>
+                <div class="innerTextBold">FUTURE</div>
+                <p class="innerTextNormal">WITH US</p>
+            </div>
+            <div class="innerSubHeader"> 
+                <div class="innerHeaderTwo">
+                    <div ><img class="innerImgNormal" src="./Assests/umbrella.png"></div>
+                    <div class="innerTextBoldHeader">SECURITY</div>
+                    <div class="innerTextNormalHeader">Lorem ipsum is simply dummy
+                    text of the printing and typesetting
+                    industry.</div>
+                </div>
+                <div class="vl"></div>
+                <div class="innerHeaderThree">
+                    <div><img class="innerImgNormal" src="./Assests/money.png"></div>
+                    <div class="innerTextBoldHeader">SAVINGS</div>
+                    <p class="innerTextNormalHeader">
+                    Lorem ipsum is simply dummy
+                    text of the printing and typesetting
+                    industry.
+                    </p>
+                </div>
+                <div class="vl"></div>
+                <div class="innerHeaderFour">
+                    <div><img class="innerImgNormal" src="./Assests/house.png"></div>
+                    <div class="innerTextBoldHeader">INVESTMENT</div>
+                    <div class="innerTextNormalHeader">Lorem ipsum is simply dummy
+                    text of the printing and typesetting
+                    industry.</div>
+                </div>
+            </div> 
+        </div>
+        
+  
+       
+            <script>
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+                toggleBtn.onclick = function(){
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+                }
+            </script> 
+    </body>
+</html>
