@@ -335,8 +335,7 @@ font-family: "Poppins";
   .subHeader{
     flex-direction: column;
     width: 100%;
-    background-color: aqua;
-    
+    background-color: aqua; 
   }
   .vl{
     display: none;
@@ -378,6 +377,9 @@ font-size: 1.5rem;
 .innerTextBold{
 font-size: 3rem;
 }
+.headerMainBtn{
+  font-size: 1.2rem;
+}
 }
 @media(max-width:576px){
 .dropdown_menu{
@@ -386,6 +388,7 @@ font-size: 3rem;
 }
 section#hero{
   background-image: url('./Assests/Hero-section.png');
+  padding: 0 1.5rem;
 }
 .innerHeaderOne{
   display: block;
@@ -395,6 +398,25 @@ font-size: 1.8rem;
 }
 .innerTextBold{
 font-size: 4rem;
+}
+.headerMainBtn{
+  font-size: 0.9rem;
+}
+  .headerText {
+  font-size: 1.5rem;
+}
+.headerMainHeading {
+   font-size: 2rem;
+   width: 70%;
+}
+.headerMainPara {
+   font-size: 0.9rem;
+   width: 80%;
+}
+}
+@media(min-width:993px) and (max-width:1050px){
+  a{
+  font-size: 0.7rem;
 }
 }
 
